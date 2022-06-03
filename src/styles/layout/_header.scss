@@ -1,0 +1,59 @@
+.c-header {
+    .c-header__container {
+        max-width: 1240px;
+        margin: auto;
+        padding: 0 20px;
+    }
+    .c-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4px;
+        & > .c-header__logo {
+            & > figure {
+                display: flex;
+                width: 164px;
+                height: 39px;
+            }
+            & > figcaption {
+                max-width: 116px;
+                margin-left: auto;
+                text-align: left;
+                font-size: 1.2rem;
+                font-family: "Noto Sans JP";
+            }
+        }
+
+        & > .c-header__nav {
+            & > ul {
+                display: flex;
+
+                & > li {
+                    padding: 0 8px;
+
+                    & > a {
+                        display: block;
+                        text-align: center;
+                        line-height: 50px;
+                        font-size: 1.6rem;
+                        color: #0080cc;
+                        font-family: "Noto Sans JP";
+                    }
+
+                    &:last-child {
+                        width: 185px;
+                        height: 50px;
+                        background-color: #0080cc;
+                        border-radius: 9px;
+                        & > a {
+                            text-align: center;
+                            line-height: 50px;
+                            text-align: center;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
